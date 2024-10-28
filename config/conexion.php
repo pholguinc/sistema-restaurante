@@ -6,7 +6,7 @@ class Conectar
     public function Conexion()
     {
         try {
-            $conectar = $this->dbh = new PDO("mysql:host=localhost;dbname=bd_restaurante", "root", "12345678");
+            $conectar = $this->dbh = new PDO("mysql:host=localhost;dbname=bd_restaurante", "root", "");
 
 
             return $conectar;
@@ -23,6 +23,6 @@ class Conectar
 
     public static function ruta()
     {
-        return "http://localhost:82/sistema_restaurante/";
+        return "http://localhost/sistema-restaurante/";
     }
 }
